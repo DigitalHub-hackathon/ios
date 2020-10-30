@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		4A11984B254C42670034A6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11984A254C42670034A6A1 /* AppDelegate.swift */; };
 		4A11984D254C42670034A6A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11984C254C42670034A6A1 /* SceneDelegate.swift */; };
-		4A11984F254C42670034A6A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11984E254C42670034A6A1 /* ViewController.swift */; };
 		4A119852254C42670034A6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A119850254C42670034A6A1 /* Main.storyboard */; };
 		4A119854254C426A0034A6A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A119853254C426A0034A6A1 /* Assets.xcassets */; };
 		4A119857254C426A0034A6A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A119855254C426A0034A6A1 /* LaunchScreen.storyboard */; };
+		4A11986D254C55810034A6A1 /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11986C254C55810034A6A1 /* BooksTableViewController.swift */; };
+		4A119871254C59930034A6A1 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11986F254C59930034A6A1 /* ItemTableViewCell.swift */; };
+		4A119872254C59930034A6A1 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A119870254C59930034A6A1 /* ItemTableViewCell.xib */; };
+		4A119876254C5CC00034A6A1 /* UIView+roundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A119875254C5CC00034A6A1 /* UIView+roundCorner.swift */; };
+		4A11987D254C9D500034A6A1 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11987B254C9D500034A6A1 /* BookViewController.swift */; };
+		4A11987E254C9D500034A6A1 /* BookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A11987C254C9D500034A6A1 /* BookViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A119847254C42670034A6A1 /* hackathon-2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackathon-2020.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A11984A254C42670034A6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A11984C254C42670034A6A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4A11984E254C42670034A6A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4A119851254C42670034A6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A119853254C426A0034A6A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A119856254C426A0034A6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A119858254C426A0034A6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A11986C254C55810034A6A1 /* BooksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
+		4A11986F254C59930034A6A1 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		4A119870254C59930034A6A1 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		4A119875254C5CC00034A6A1 /* UIView+roundCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+roundCorner.swift"; sourceTree = "<group>"; };
+		4A11987B254C9D500034A6A1 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		4A11987C254C9D500034A6A1 /* BookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +68,42 @@
 			children = (
 				4A11984A254C42670034A6A1 /* AppDelegate.swift */,
 				4A11984C254C42670034A6A1 /* SceneDelegate.swift */,
-				4A11984E254C42670034A6A1 /* ViewController.swift */,
+				4A119863254C548B0034A6A1 /* ViewControllers */,
+				4A119865254C54970034A6A1 /* Views */,
 				4A119850254C42670034A6A1 /* Main.storyboard */,
 				4A119853254C426A0034A6A1 /* Assets.xcassets */,
 				4A119855254C426A0034A6A1 /* LaunchScreen.storyboard */,
 				4A119858254C426A0034A6A1 /* Info.plist */,
 			);
 			path = "hackathon-2020";
+			sourceTree = "<group>";
+		};
+		4A119863254C548B0034A6A1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A11986C254C55810034A6A1 /* BooksTableViewController.swift */,
+				4A11987B254C9D500034A6A1 /* BookViewController.swift */,
+				4A11987C254C9D500034A6A1 /* BookViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4A119865254C54970034A6A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A119874254C5BE30034A6A1 /* Extensions */,
+				4A11986F254C59930034A6A1 /* ItemTableViewCell.swift */,
+				4A119870254C59930034A6A1 /* ItemTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A119874254C5BE30034A6A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4A119875254C5CC00034A6A1 /* UIView+roundCorner.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +163,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A119872254C59930034A6A1 /* ItemTableViewCell.xib in Resources */,
 				4A119857254C426A0034A6A1 /* LaunchScreen.storyboard in Resources */,
+				4A11987E254C9D500034A6A1 /* BookViewController.xib in Resources */,
 				4A119854254C426A0034A6A1 /* Assets.xcassets in Resources */,
 				4A119852254C42670034A6A1 /* Main.storyboard in Resources */,
 			);
@@ -137,9 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A11984F254C42670034A6A1 /* ViewController.swift in Sources */,
+				4A119871254C59930034A6A1 /* ItemTableViewCell.swift in Sources */,
 				4A11984B254C42670034A6A1 /* AppDelegate.swift in Sources */,
 				4A11984D254C42670034A6A1 /* SceneDelegate.swift in Sources */,
+				4A11987D254C9D500034A6A1 /* BookViewController.swift in Sources */,
+				4A119876254C5CC00034A6A1 /* UIView+roundCorner.swift in Sources */,
+				4A11986D254C55810034A6A1 /* BooksTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
