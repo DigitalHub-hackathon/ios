@@ -13,11 +13,17 @@
 		4A119854254C426A0034A6A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A119853254C426A0034A6A1 /* Assets.xcassets */; };
 		4A119857254C426A0034A6A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A119855254C426A0034A6A1 /* LaunchScreen.storyboard */; };
 		4A11986D254C55810034A6A1 /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11986C254C55810034A6A1 /* BooksTableViewController.swift */; };
-		4A119871254C59930034A6A1 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11986F254C59930034A6A1 /* ItemTableViewCell.swift */; };
-		4A119872254C59930034A6A1 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A119870254C59930034A6A1 /* ItemTableViewCell.xib */; };
-		4A119876254C5CC00034A6A1 /* UIView+roundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A119875254C5CC00034A6A1 /* UIView+roundCorner.swift */; };
+		4A119871254C59930034A6A1 /* ForYouItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11986F254C59930034A6A1 /* ForYouItemTableViewCell.swift */; };
+		4A119872254C59930034A6A1 /* ForYouItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A119870254C59930034A6A1 /* ForYouItemTableViewCell.xib */; };
 		4A11987D254C9D500034A6A1 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11987B254C9D500034A6A1 /* BookViewController.swift */; };
 		4A11987E254C9D500034A6A1 /* BookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A11987C254C9D500034A6A1 /* BookViewController.xib */; };
+		4A119886254CAE230034A6A1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A119885254CAE230034A6A1 /* Colors.swift */; };
+		4A11988B254CB22B0034A6A1 /* YanoneKaffeesatz-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4A11988A254CB22B0034A6A1 /* YanoneKaffeesatz-Regular.otf */; };
+		4A11988E254CC3660034A6A1 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11988D254CC3660034A6A1 /* EventsTableViewController.swift */; };
+		4A119893254CC4D50034A6A1 /* GroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A119892254CC4D50034A6A1 /* GroupsTableViewController.swift */; };
+		4A119897254CC6D10034A6A1 /* UIView+shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A119896254CC6D10034A6A1 /* UIView+shadow.swift */; };
+		4A1198A0254D53340034A6A1 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11989E254D53340034A6A1 /* ItemTableViewCell.swift */; };
+		4A1198A1254D53340034A6A1 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A11989F254D53340034A6A1 /* ItemTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +35,17 @@
 		4A119856254C426A0034A6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A119858254C426A0034A6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A11986C254C55810034A6A1 /* BooksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
-		4A11986F254C59930034A6A1 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
-		4A119870254C59930034A6A1 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
-		4A119875254C5CC00034A6A1 /* UIView+roundCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+roundCorner.swift"; sourceTree = "<group>"; };
+		4A11986F254C59930034A6A1 /* ForYouItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouItemTableViewCell.swift; sourceTree = "<group>"; };
+		4A119870254C59930034A6A1 /* ForYouItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForYouItemTableViewCell.xib; sourceTree = "<group>"; };
 		4A11987B254C9D500034A6A1 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		4A11987C254C9D500034A6A1 /* BookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookViewController.xib; sourceTree = "<group>"; };
+		4A119885254CAE230034A6A1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		4A11988A254CB22B0034A6A1 /* YanoneKaffeesatz-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Regular.otf"; sourceTree = "<group>"; };
+		4A11988D254CC3660034A6A1 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		4A119892254CC4D50034A6A1 /* GroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
+		4A119896254CC6D10034A6A1 /* UIView+shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+shadow.swift"; sourceTree = "<group>"; };
+		4A11989E254D53340034A6A1 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		4A11989F254D53340034A6A1 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 				4A11984C254C42670034A6A1 /* SceneDelegate.swift */,
 				4A119863254C548B0034A6A1 /* ViewControllers */,
 				4A119865254C54970034A6A1 /* Views */,
+				4A119883254CAE0E0034A6A1 /* Model */,
 				4A119850254C42670034A6A1 /* Main.storyboard */,
 				4A119853254C426A0034A6A1 /* Assets.xcassets */,
 				4A119855254C426A0034A6A1 /* LaunchScreen.storyboard */,
@@ -81,6 +94,8 @@
 		4A119863254C548B0034A6A1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4A11988D254CC3660034A6A1 /* EventsTableViewController.swift */,
+				4A119892254CC4D50034A6A1 /* GroupsTableViewController.swift */,
 				4A11986C254C55810034A6A1 /* BooksTableViewController.swift */,
 				4A11987B254C9D500034A6A1 /* BookViewController.swift */,
 				4A11987C254C9D500034A6A1 /* BookViewController.xib */,
@@ -92,8 +107,10 @@
 			isa = PBXGroup;
 			children = (
 				4A119874254C5BE30034A6A1 /* Extensions */,
-				4A11986F254C59930034A6A1 /* ItemTableViewCell.swift */,
-				4A119870254C59930034A6A1 /* ItemTableViewCell.xib */,
+				4A11986F254C59930034A6A1 /* ForYouItemTableViewCell.swift */,
+				4A119870254C59930034A6A1 /* ForYouItemTableViewCell.xib */,
+				4A11989E254D53340034A6A1 /* ItemTableViewCell.swift */,
+				4A11989F254D53340034A6A1 /* ItemTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -101,9 +118,34 @@
 		4A119874254C5BE30034A6A1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4A119875254C5CC00034A6A1 /* UIView+roundCorner.swift */,
+				4A119896254CC6D10034A6A1 /* UIView+shadow.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4A119883254CAE0E0034A6A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A119884254CAE180034A6A1 /* Style */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A119884254CAE180034A6A1 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				4A119889254CB2130034A6A1 /* Fonts */,
+				4A119885254CAE230034A6A1 /* Colors.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		4A119889254CB2130034A6A1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4A11988A254CB22B0034A6A1 /* YanoneKaffeesatz-Regular.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,10 +205,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A119872254C59930034A6A1 /* ItemTableViewCell.xib in Resources */,
+				4A119872254C59930034A6A1 /* ForYouItemTableViewCell.xib in Resources */,
 				4A119857254C426A0034A6A1 /* LaunchScreen.storyboard in Resources */,
 				4A11987E254C9D500034A6A1 /* BookViewController.xib in Resources */,
 				4A119854254C426A0034A6A1 /* Assets.xcassets in Resources */,
+				4A11988B254CB22B0034A6A1 /* YanoneKaffeesatz-Regular.otf in Resources */,
+				4A1198A1254D53340034A6A1 /* ItemTableViewCell.xib in Resources */,
 				4A119852254C42670034A6A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,11 +222,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A119871254C59930034A6A1 /* ItemTableViewCell.swift in Sources */,
+				4A119871254C59930034A6A1 /* ForYouItemTableViewCell.swift in Sources */,
 				4A11984B254C42670034A6A1 /* AppDelegate.swift in Sources */,
+				4A1198A0254D53340034A6A1 /* ItemTableViewCell.swift in Sources */,
+				4A119893254CC4D50034A6A1 /* GroupsTableViewController.swift in Sources */,
 				4A11984D254C42670034A6A1 /* SceneDelegate.swift in Sources */,
+				4A119886254CAE230034A6A1 /* Colors.swift in Sources */,
 				4A11987D254C9D500034A6A1 /* BookViewController.swift in Sources */,
-				4A119876254C5CC00034A6A1 /* UIView+roundCorner.swift in Sources */,
+				4A11988E254CC3660034A6A1 /* EventsTableViewController.swift in Sources */,
+				4A119897254CC6D10034A6A1 /* UIView+shadow.swift in Sources */,
 				4A11986D254C55810034A6A1 /* BooksTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="114" id="KGk-i7-Jjw" customClass="ItemTableViewCell" customModule="hackathon_2020" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="114" id="KGk-i7-Jjw" customClass="ForYouItemTableViewCell" customModule="hackathon_2020" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="417" height="114"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -19,15 +19,15 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VYU-Pv-vys">
-                        <rect key="frame" x="8" y="4" width="401" height="106"/>
+                        <rect key="frame" x="8" y="18" width="401" height="92"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="752" text="Длинное название очень динное ну прям очень еще длиннее" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64i-4c-Ihs">
-                                <rect key="frame" x="8" y="8" width="385" height="41"/>
+                                <rect key="frame" x="8" y="14" width="385" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHe-q1-CCo">
-                                <rect key="frame" x="8" y="57" width="385" height="41"/>
+                                <rect key="frame" x="8" y="63" width="385" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -36,7 +36,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="EHe-q1-CCo" firstAttribute="leading" secondItem="VYU-Pv-vys" secondAttribute="leading" constant="8" id="6u8-Aj-UC2"/>
-                            <constraint firstItem="64i-4c-Ihs" firstAttribute="top" secondItem="VYU-Pv-vys" secondAttribute="top" constant="8" id="8gK-cD-9Am"/>
                             <constraint firstAttribute="bottom" secondItem="EHe-q1-CCo" secondAttribute="bottom" constant="8" id="Lbl-G4-7uf"/>
                             <constraint firstAttribute="trailing" secondItem="EHe-q1-CCo" secondAttribute="trailing" constant="8" id="ObA-U9-65f"/>
                             <constraint firstItem="64i-4c-Ihs" firstAttribute="leading" secondItem="VYU-Pv-vys" secondAttribute="leading" constant="8" id="RxX-2p-boY"/>
@@ -44,19 +43,42 @@
                             <constraint firstAttribute="trailing" secondItem="64i-4c-Ihs" secondAttribute="trailing" constant="8" id="uYG-zr-0dY"/>
                         </constraints>
                     </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="542-n9-GMx">
+                        <rect key="frame" x="330" y="4" width="64" height="28"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для тебя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gON-CS-dnT">
+                                <rect key="frame" x="4" y="4" width="56" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gON-CS-dnT" secondAttribute="trailing" constant="4" id="GTH-DO-HoX"/>
+                            <constraint firstItem="gON-CS-dnT" firstAttribute="top" secondItem="542-n9-GMx" secondAttribute="top" constant="4" id="evu-b6-M9s"/>
+                            <constraint firstAttribute="bottom" secondItem="gON-CS-dnT" secondAttribute="bottom" constant="8" id="gMs-fI-zRo"/>
+                            <constraint firstItem="gON-CS-dnT" firstAttribute="leading" secondItem="542-n9-GMx" secondAttribute="leading" constant="4" id="vNl-60-qRe"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="542-n9-GMx" secondAttribute="trailing" constant="23" id="7Zt-uN-Og4"/>
                     <constraint firstAttribute="trailing" secondItem="VYU-Pv-vys" secondAttribute="trailing" constant="8" id="BpE-vt-2HF"/>
-                    <constraint firstItem="VYU-Pv-vys" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="Ce1-Ay-1XG"/>
+                    <constraint firstItem="64i-4c-Ihs" firstAttribute="top" secondItem="542-n9-GMx" secondAttribute="bottom" id="ab6-jm-gPL"/>
                     <constraint firstItem="VYU-Pv-vys" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ava-Us-aTa"/>
+                    <constraint firstItem="542-n9-GMx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="ndO-oz-vA4"/>
+                    <constraint firstItem="542-n9-GMx" firstAttribute="centerY" secondItem="VYU-Pv-vys" secondAttribute="top" id="w3o-8A-3bf"/>
                     <constraint firstAttribute="bottom" secondItem="VYU-Pv-vys" secondAttribute="bottom" constant="4" id="zhw-HE-d3U"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="containerView" destination="VYU-Pv-vys" id="scq-fq-t3b"/>
-                <outlet property="nameLabel" destination="64i-4c-Ihs" id="cn5-3K-dqf"/>
+                <outlet property="containerView" destination="VYU-Pv-vys" id="AL9-nL-7s4"/>
+                <outlet property="forYouLabel" destination="gON-CS-dnT" id="h1H-sx-icu"/>
+                <outlet property="forYouView" destination="542-n9-GMx" id="n1Q-fp-1lg"/>
+                <outlet property="nameLabel" destination="64i-4c-Ihs" id="TfS-6g-P3Z"/>
             </connections>
             <point key="canvasLocation" x="209.42028985507247" y="80.357142857142847"/>
         </tableViewCell>
@@ -64,6 +86,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -1,13 +1,13 @@
 //
-//  BooksTableViewController.swift
+//  GroupsTableViewController.swift
 //  hackathon-2020
 //
-//  Created by art-off on 30.10.2020.
+//  Created by art-off on 31.10.2020.
 //
 
 import UIKit
 
-class BooksTableViewController: UITableViewController {
+class GroupsTableViewController: UITableViewController {
     
     override func loadView() {
         super.loadView()
@@ -27,16 +27,16 @@ class BooksTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.navigationBar.barTintColor = Colors.yellow
+        navigationController?.navigationBar.barTintColor = Colors.lightBlue
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.titleTextAttributes = [.font: UIFont(name: "Yanone Kaffeesatz", size: 28)!, .foregroundColor: UIColor.black]
-        title = "Книги"
+        title = "Кружки"
     }
 
 }
 
 // MARK: - Table View Data Source
-extension BooksTableViewController {
+extension GroupsTableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -47,15 +47,17 @@ extension BooksTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ItemTableViewCell.reuseIdentifier, for: indexPath) as! ItemTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ForYouItemTableViewCell.reuseIdentifier, for: indexPath) as! ForYouItemTableViewCell
         cell.nameLabel.text = "slkdjfl;askdjf laskjdfl ;aksjdfl; kasjdfl; kajsdl; fkjas;ldk fjasl;dkjf al;sdkjf l;askjdf l;ajksdfl; kjfas;lkdj fl;kasj d;lkfaj s"
+        cell.forYouView.backgroundColor = Colors.lightBlue
+        cell.forYouLabel.textColor = UIColor.black
         return cell
     }
     
 }
 
-// MARK: -  Table View Delegate
-extension BooksTableViewController {
+// MARK: - Table View Delegate
+extension GroupsTableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         navigationController?.pushViewController(BookViewController(), animated: true)
