@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,9 +24,15 @@
 		4A119897254CC6D10034A6A1 /* UIView+shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A119896254CC6D10034A6A1 /* UIView+shadow.swift */; };
 		4A1198A0254D53340034A6A1 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11989E254D53340034A6A1 /* ItemTableViewCell.swift */; };
 		4A1198A1254D53340034A6A1 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A11989F254D53340034A6A1 /* ItemTableViewCell.xib */; };
+		4A1198A5254D56820034A6A1 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1198A3254D56820034A6A1 /* AuthViewController.swift */; };
+		4A1198A6254D56820034A6A1 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1198A4254D56820034A6A1 /* AuthViewController.xib */; };
+		4A1198AE254D8C5C0034A6A1 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1198AC254D8C5C0034A6A1 /* RegistrationViewController.swift */; };
+		4A1198AF254D8C5C0034A6A1 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1198AD254D8C5C0034A6A1 /* RegistrationViewController.xib */; };
+		E07BD8CE96F29F59B66722DB /* Pods_hackathon_2020.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C367A3536B52A17F7200D98 /* Pods_hackathon_2020.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42AA7EB005690B9DCA9AA598 /* Pods-hackathon-2020.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackathon-2020.release.xcconfig"; path = "Target Support Files/Pods-hackathon-2020/Pods-hackathon-2020.release.xcconfig"; sourceTree = "<group>"; };
 		4A119847254C42670034A6A1 /* hackathon-2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackathon-2020.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A11984A254C42670034A6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A11984C254C42670034A6A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +52,12 @@
 		4A119896254CC6D10034A6A1 /* UIView+shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+shadow.swift"; sourceTree = "<group>"; };
 		4A11989E254D53340034A6A1 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		4A11989F254D53340034A6A1 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		4A1198A3254D56820034A6A1 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		4A1198A4254D56820034A6A1 /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		4A1198AC254D8C5C0034A6A1 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		4A1198AD254D8C5C0034A6A1 /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		6C23AAA80EBC7DC47EB4FC70 /* Pods-hackathon-2020.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackathon-2020.debug.xcconfig"; path = "Target Support Files/Pods-hackathon-2020/Pods-hackathon-2020.debug.xcconfig"; sourceTree = "<group>"; };
+		6C367A3536B52A17F7200D98 /* Pods_hackathon_2020.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hackathon_2020.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07BD8CE96F29F59B66722DB /* Pods_hackathon_2020.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +77,8 @@
 			children = (
 				4A119849254C42670034A6A1 /* hackathon-2020 */,
 				4A119848254C42670034A6A1 /* Products */,
+				E1A0091D76C51C5140A3278C /* Pods */,
+				B4CADBCF375C7E95472596AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +114,10 @@
 				4A11986C254C55810034A6A1 /* BooksTableViewController.swift */,
 				4A11987B254C9D500034A6A1 /* BookViewController.swift */,
 				4A11987C254C9D500034A6A1 /* BookViewController.xib */,
+				4A1198A3254D56820034A6A1 /* AuthViewController.swift */,
+				4A1198A4254D56820034A6A1 /* AuthViewController.xib */,
+				4A1198AC254D8C5C0034A6A1 /* RegistrationViewController.swift */,
+				4A1198AD254D8C5C0034A6A1 /* RegistrationViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -148,6 +167,23 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		B4CADBCF375C7E95472596AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C367A3536B52A17F7200D98 /* Pods_hackathon_2020.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1A0091D76C51C5140A3278C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C23AAA80EBC7DC47EB4FC70 /* Pods-hackathon-2020.debug.xcconfig */,
+				42AA7EB005690B9DCA9AA598 /* Pods-hackathon-2020.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A11985B254C426A0034A6A1 /* Build configuration list for PBXNativeTarget "hackathon-2020" */;
 			buildPhases = (
+				8337FAB53A181955B9B96525 /* [CP] Check Pods Manifest.lock */,
 				4A119843254C42670034A6A1 /* Sources */,
 				4A119844254C42670034A6A1 /* Frameworks */,
 				4A119845254C42670034A6A1 /* Resources */,
+				F0B5B89AECCC8CE575CD94FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,8 +243,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A1198A6254D56820034A6A1 /* AuthViewController.xib in Resources */,
 				4A119872254C59930034A6A1 /* ForYouItemTableViewCell.xib in Resources */,
 				4A119857254C426A0034A6A1 /* LaunchScreen.storyboard in Resources */,
+				4A1198AF254D8C5C0034A6A1 /* RegistrationViewController.xib in Resources */,
 				4A11987E254C9D500034A6A1 /* BookViewController.xib in Resources */,
 				4A119854254C426A0034A6A1 /* Assets.xcassets in Resources */,
 				4A11988B254CB22B0034A6A1 /* YanoneKaffeesatz-Regular.otf in Resources */,
@@ -217,16 +257,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8337FAB53A181955B9B96525 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hackathon-2020-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0B5B89AECCC8CE575CD94FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hackathon-2020/Pods-hackathon-2020-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hackathon-2020/Pods-hackathon-2020-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hackathon-2020/Pods-hackathon-2020-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4A119843254C42670034A6A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A1198A5254D56820034A6A1 /* AuthViewController.swift in Sources */,
 				4A119871254C59930034A6A1 /* ForYouItemTableViewCell.swift in Sources */,
 				4A11984B254C42670034A6A1 /* AppDelegate.swift in Sources */,
 				4A1198A0254D53340034A6A1 /* ItemTableViewCell.swift in Sources */,
 				4A119893254CC4D50034A6A1 /* GroupsTableViewController.swift in Sources */,
 				4A11984D254C42670034A6A1 /* SceneDelegate.swift in Sources */,
+				4A1198AE254D8C5C0034A6A1 /* RegistrationViewController.swift in Sources */,
 				4A119886254CAE230034A6A1 /* Colors.swift in Sources */,
 				4A11987D254C9D500034A6A1 /* BookViewController.swift in Sources */,
 				4A11988E254CC3660034A6A1 /* EventsTableViewController.swift in Sources */,
@@ -375,6 +459,7 @@
 		};
 		4A11985C254C426A0034A6A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C23AAA80EBC7DC47EB4FC70 /* Pods-hackathon-2020.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -394,6 +479,7 @@
 		};
 		4A11985D254C426A0034A6A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42AA7EB005690B9DCA9AA598 /* Pods-hackathon-2020.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
