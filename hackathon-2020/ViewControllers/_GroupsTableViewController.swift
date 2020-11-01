@@ -1,13 +1,15 @@
 //
-//  BooksTableViewController.swift
+//  _GroupsTableViewController.swift
 //  hackathon-2020
 //
-//  Created by art-off on 30.10.2020.
+//  Created by art-off on 01.11.2020.
 //
 
 import UIKit
 
-class BooksTableViewController: UITableViewController {
+class _GroupsTableViewController: UITableViewController {
+    
+    var dataSource = [RGroups]()
     
     override func loadView() {
         super.loadView()
@@ -15,9 +17,6 @@ class BooksTableViewController: UITableViewController {
         tableView.register(
             UINib(nibName: ForYouItemTableViewCell.nibName, bundle: nil),
             forCellReuseIdentifier: ForYouItemTableViewCell.reuseIdentifier)
-//        tableView.register(
-//            UINib(nibName: ItemTableViewCell.nibName, bundle: nil),
-//            forCellReuseIdentifier: ItemTableViewCell.reuseIdentifier)
         
         view.backgroundColor = Colors.darkPurple
         
@@ -32,7 +31,7 @@ class BooksTableViewController: UITableViewController {
         navigationController?.navigationBar.barTintColor = Colors.red
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.titleTextAttributes = [.font: UIFont(name: "Yanone Kaffeesatz", size: 28)!, .foregroundColor: UIColor.white]
-        title = "Книги"
+        title = "Кружки"
         
         tabBarController?.tabBar.tintColor = Colors.red
         tabBarController?.tabBar.barTintColor = Colors.purple
@@ -41,29 +40,26 @@ class BooksTableViewController: UITableViewController {
 }
 
 // MARK: - Table View Data Source
-extension BooksTableViewController {
+extension _GroupsTableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return dataSource.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let event = dataSource[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: ForYouItemTableViewCell.reuseIdentifier, for: indexPath) as! ForYouItemTableViewCell
-        cell.nameLabel.text = "slkdjfl;askdjf laskjdfl ;aksjdfl; kasjdfl; kajsdl; fkjas;ldk fjasl;dkjf al;sdkjf l;askjdf l;ajksdfl; kjfas;lkdj fl;kasj d;lkfaj s"
+        cell.nameLabel.text = event.name
+        cell.dateLabel.text = event.organization?.street
+        cell.addressLabel.text = "\(event.duration.components(separatedBy: ",0000")[0]) \(event.duration.components(separatedBy: ",0000")[1])"
+        cell.forYouView.isHidden = true
+        cell.goButton.isHidden = true
+        cell.id = event.id
         return cell
-    }
-    
-}
-
-// MARK: -  Table View Delegate
-extension BooksTableViewController {
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigationController?.pushViewController(EventViewController(), animated: true)
     }
     
 }

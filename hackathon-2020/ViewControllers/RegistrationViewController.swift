@@ -30,6 +30,7 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var repeatPawwordTextFieldView: UIView!
     
     @IBOutlet var genderRadioButtons: [SKRadioButton]!
+    private var selectedGender: RGender?
     
     @IBOutlet weak var signUpButton: UIButton!
     
@@ -121,5 +122,36 @@ class RegistrationViewController: UIViewController {
             button.isSelected = false
         }
         sender.isSelected = true
+        
+        if sender.tag == 0 {
+            selectedGender = .male
+        } else if sender.tag == 1 {
+            selectedGender = .female
+        }
     }
+    
+    @IBAction func registrationButtonTapped(_ sender: UIButton) {
+        for textField in [lastNameTextField, firstNameTextField, patronymicTextField, dateOfBirthTextField, emailTextField, passwordTextField, repeatPasswordTextField] {
+            guard textField?.text != "" && textField?.text != nil else { return }
+        }
+        guard selectedGender != nil else { return }
+        guard passwordTextField.text! == repeatPasswordTextField.text! else { return }
+        
+        let user = RUser()
+        user.email = emailTextField.text!
+        user.password = passwordTextField.text!
+        user.firstName = firstNameTextField.text!
+        user.lastName = lastNameTextField.text!
+        user.patronymic = patronymicTextField.text!
+        user.birthDate = dateOfBirthTextField.text!
+        user.gender = selectedGender!.rawValue
+        
+        UserHelper.registrationUser(user: user)
+        UserHelper.authUser(withEmail: user.email, password: user.password)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialTabBarController = storyboard.instantiateViewController(withIdentifier: "InitialTabBarControllerID") as! UITabBarController
+        UIApplication.shared.keyWindow?.rootViewController = initialTabBarController
+    }
+    
 }

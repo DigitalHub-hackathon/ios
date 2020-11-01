@@ -59,4 +59,21 @@ class AuthViewController: UIViewController {
         titleLabel.font = UIFont(name: "Yanone Kaffeesatz", size: 55)!
     }
     
+    @IBAction func registrationButtonTupped(_ sender: UIButton) {
+        let registrationVC = RegistrationViewController()
+        present(registrationVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func signInButtonTapped(_ sender: UIButton) {
+        for textField in [emailTextField, passwordTextField] {
+            guard textField?.text != "" && textField?.text != nil else { return }
+        }
+        
+        guard UserHelper.authUser(withEmail: emailTextField.text!, password: passwordTextField.text!) else { return }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialTabBarController = storyboard.instantiateViewController(withIdentifier: "InitialTabBarControllerID") as! UITabBarController
+        UIApplication.shared.keyWindow?.rootViewController = initialTabBarController
+    }
+    
 }

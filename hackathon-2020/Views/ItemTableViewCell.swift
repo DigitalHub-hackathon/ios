@@ -21,6 +21,8 @@ class ItemTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        containerView.backgroundColor = Colors.purple
+        
         containerView.makeShadow(radius: 6, color: .black, opacity: 0.25)
         containerView.layer.cornerRadius = 15
     }

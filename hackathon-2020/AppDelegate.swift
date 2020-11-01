@@ -14,6 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        ApiManager.loadRecomendationGroups(idGroups: [40601, 41800, 41894]) { a in
+            print(a)
+        }
+        
         return true
     }
 

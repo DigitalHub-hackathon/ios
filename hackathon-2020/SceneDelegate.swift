@@ -21,8 +21,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
-        let authVC = AuthViewController()
-        window?.rootViewController = authVC
+        print(DataManager.shared.getUsers())
+        print(DataManager.shared.getCurrUsers())
+        
+        if UserHelper.isUserAuth() {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialTabBarController = storyboard.instantiateViewController(withIdentifier: "InitialTabBarControllerID") as! UITabBarController
+            window?.rootViewController = initialTabBarController
+        } else {
+            let authVC = AuthViewController()
+            window?.rootViewController = authVC
+        }
         
         window?.makeKeyAndVisible()
     }
